@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>FB Bridge: настройки</title>
+  <style>
+    body { font: 14px system-ui, sans-serif; margin: 24px; max-width: 640px; }
+    label { display: block; margin: 12px 0 4px; font-weight: 600; }
+    input { width: 100%; padding: 6px; box-sizing: border-box; }
+    .hint { color: #666; font-size: 12px; }
+    button { margin: 16px 8px 0 0; padding: 8px 14px; }
+    #result { margin-top: 14px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h2>FB Bridge: настройки</h2>
+  <label for="server">Адрес сервера MediaScanner</label>
+  <input id="server" placeholder="https://app.mediascanner.kz">
+  <label for="token">Токен</label>
+  <input id="token" type="password" autocomplete="off">
+  <div class="hint">Значение FACEBOOK_BRIDGE_TOKENS из переменных CI бэкенда.</div>
+  <label for="label">Метка ПК</label>
+  <input id="label" placeholder="fb-pc-1">
+  <label for="fbAccount">Аккаунт Facebook (необязательно)</label>
+  <input id="fbAccount" placeholder="имя или почта аккаунта, для себя">
+  <div class="hint">Под каким аккаунтом выполнен вход в этом профиле Chrome. Пароль сюда не вводить.</div>
+  <button id="save">Сохранить</button>
+  <button id="test">Проверить</button>
+  <div id="result"></div>
+  <script src="options.js"></script>
+</body>
+</html>

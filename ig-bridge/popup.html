@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>IG Bridge</title>
+  <style>
+    body { font: 13px system-ui, sans-serif; margin: 12px; width: 300px; }
+    h3 { margin: 0 0 8px; }
+    .row { margin: 4px 0; }
+    .muted { color: #666; }
+    button { margin: 10px 6px 0 0; padding: 6px 10px; }
+  </style>
+</head>
+<body>
+  <h3>IG Bridge</h3>
+  <div class="row"><b id="status">…</b></div>
+  <div class="row" id="message"></div>
+  <div class="row muted" id="details"></div>
+  <button id="reconnect">Переподключиться</button>
+  <button id="options">Настройки</button>
+  <script src="popup.js"></script>
+</body>
+</html>

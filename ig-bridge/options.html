@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>IG Bridge: настройки</title>
+  <style>
+    body { font: 14px system-ui, sans-serif; margin: 24px; max-width: 640px; }
+    label { display: block; margin: 12px 0 4px; font-weight: 600; }
+    input { width: 100%; padding: 6px; box-sizing: border-box; }
+    .hint { color: #666; font-size: 12px; }
+    button { margin: 16px 8px 0 0; padding: 8px 14px; }
+    #result { margin-top: 14px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h2>IG Bridge: настройки</h2>
+  <label for="bridgeUrl">Адрес шлюза</label>
+  <input id="bridgeUrl" placeholder="wss://ig-bridge.mediascanner.kz/ws">
+  <label for="token">Токен</label>
+  <input id="token" type="password" autocomplete="off">
+  <div class="hint">Значение IG_EXTENSION_TOKENS с сервера парсера.</div>
+  <label for="label">Метка ПК</label>
+  <input id="label" placeholder="office-pc-1">
+  <label for="igUsername">Ник аккаунта Instagram (необязательно)</label>
+  <input id="igUsername">
+  <label for="beaconProfile">Открытый профиль-маяк</label>
+  <input id="beaconProfile" placeholder="oskemencity">
+  <div class="hint">Раз в 6 часов расширение открывает этот профиль, чтобы снять со страницы свежие параметры запроса ленты.</div>
+  <button id="save">Сохранить</button>
+  <button id="test">Проверить</button>
+  <div id="result"></div>
+  <script src="options.js"></script>
+</body>
+</html>
